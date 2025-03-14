@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn8pl0iwd7lsv"]
+
+[ext_resource type="PackedScene" uid="uid://17thgb4pw2ip" path="res://Monster/cac-1741905026432.gltf" id="1_6d5rc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v5vgx"]
+height = 1.8
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0561678, 0)
+shape = SubResource("CapsuleShape3D_v5vgx")
+
+[node name="AuxScene" parent="." instance=ExtResource("1_6d5rc")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

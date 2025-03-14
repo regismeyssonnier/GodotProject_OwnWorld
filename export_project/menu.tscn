@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcksujydbfnie"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_agskv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_agskv")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 21.0
+offset_top = 15.0
+offset_right = 361.0
+offset_bottom = 362.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 27.0
+offset_right = 145.0
+offset_bottom = 50.0
+text = "Hauteur :"
+
+[node name="HSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 16.0
+offset_right = 328.0
+offset_bottom = 67.0
+focus_mode = 0
+max_value = 1000.0
+
+[node name="Lable_Nombre_Grass" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 68.0
+offset_right = 114.0
+offset_bottom = 91.0
+text = "Nombre:"
+
+[node name="HSliderNombreGrass" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 73.0
+offset_right = 329.0
+offset_bottom = 89.0
+focus_mode = 0
+max_value = 10000.0
+step = 50.0
+value = 2500.0
+
+[node name="LabelFPS" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 110.0
+offset_right = 66.0
+offset_bottom = 133.0
+text = "FPS 150"
